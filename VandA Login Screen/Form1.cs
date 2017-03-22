@@ -11,13 +11,13 @@ using System.Data.OleDb;
 
 namespace VandA_Login_Screen
 {
-    public partial class Form1 : Form
+    public partial class LoginScreen : Form
     {
        private OleDbConnection connection = new OleDbConnection();
-        public Form1()
+        public LoginScreen()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JosephLapt\Desktop\Database\VANDA AGENCY.accdb;
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JosephLapt\Desktop\Database\NursingPlacementApplication.accdb;
 Persist Security Info = False; ";
         }
 
@@ -41,9 +41,9 @@ Persist Security Info = False; ";
             connection.Open();
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
-            command.CommandText = "select * from TblEmployee where Username='" + txt_Username.Text+ "' and Password='"+txt_Password.Text+"'";
+            command.CommandText = "select * from TblLogins where Username='" + txt_Username.Text+ "' and Password='"+txt_Password.Text+"'";
 
-           OleDbDataReader reader= command.ExecuteReader();
+            OleDbDataReader reader = command.ExecuteReader();
             int count = 0;
             while(reader.Read())
             {
@@ -52,6 +52,11 @@ Persist Security Info = False; ";
           if(count==1)
             {
                 MessageBox.Show("Username and Password Is Correct");
+                connection.Close();
+                connection.Dispose();
+                this.Hide();
+                Form5 f5 = new Form5();
+                f5.ShowDialog();
             }
            else if (count > 1)
             {
@@ -66,6 +71,21 @@ Persist Security Info = False; ";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Username_TextChanged(object sender, EventArgs e)
         {
 
         }

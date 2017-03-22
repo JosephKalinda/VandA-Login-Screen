@@ -33,8 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +60,114 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Availabilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Availabilities.Designer.cs">
+      <DependentUpon>Availabilities.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hospital.Designer.cs">
+      <DependentUpon>Hospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NursingPlacementApplicationDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NursingPlacementApplicationDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Availabilities.resx">
+      <DependentUpon>Availabilities.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hospital.resx">
+      <DependentUpon>Hospital.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +178,85 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="NursingPlacementApplicationDataSet.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet1.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet1.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet2.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet2.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet3.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet3.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet4.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet4.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet5.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet5.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet6.xsc">
+      <DependentUpon>NursingPlacementApplicationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NursingPlacementApplicationDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NursingPlacementApplicationDataSet6.xss">
+      <DependentUpon>NursingPlacementApplicationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +269,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <Content Include="NursingPlacementApplication.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
